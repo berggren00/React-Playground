@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 const App = () => {
   const [counter, setCounter] = useState(0);
 
-  const INCREMENT_AMOUNT = 25;
+  const INCREMENT_AMOUNT = 45;
   const RESET_AMOUNT = 0;
   
   function increment() {
@@ -11,7 +11,9 @@ const App = () => {
   }
 
   function decrement() {
+    if (counter > 0) {
     setCounter(counter -1);
+    }
   }
 
   function incrementByAmount() {
@@ -24,11 +26,14 @@ const App = () => {
 
   return (
     <div>
-      <h1>{counter}</h1>
-      <button onClick={increment}>Öka räknaren</button>
-      <button onClick={decrement}>Minska räknaren</button>
-      <button onClick={incrementByAmount}>Öka räknaren med {INCREMENT_AMOUNT}</button>
-      <button onClick={resetAmount}>Resetta Knappen</button>
+      <h1 className="counter">{counter}</h1>
+      <h2 className="buttonContainer">
+      <button className="button" onClick={increment}>Öka räknaren</button>
+      <button className="button" onClick={decrement}>Minska räknaren</button>
+      <button className="button" onClick={incrementByAmount}>Öka räknaren med {INCREMENT_AMOUNT}</button>
+      <button className="button" onClick={resetAmount}>Resetta Knappen</button>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" className="button">Generate random number</a>
+      </h2>
     </div>
   )
 }
