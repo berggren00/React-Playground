@@ -32,7 +32,7 @@ const App = () => {
       <button className="button" onClick={decrement}>Minska räknaren</button>
       <button className="button" onClick={incrementByAmount}>Öka räknaren med {INCREMENT_AMOUNT}</button>
       <button className="button" onClick={resetAmount}>Resetta Knappen</button>
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" className="button">Generate random number</a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" className="button" target="_blank" rel="noopener noreferrer">Generate random number</a>
       </h2>
     </div>
   )
