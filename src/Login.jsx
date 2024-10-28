@@ -31,7 +31,7 @@ const Login = () => {
                 <label className="loginInfo">Password</label>
                 <input
                 className="input"
-                type="text"
+                type="password"
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}
                 required
