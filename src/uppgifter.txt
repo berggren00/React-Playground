@@ -1,0 +1,11 @@
+1. “Kom ihåg mig”-Checkbox med Local Storage
+På många hemsidors login formulär så finns det ofta en knapp/checkbox för "Remember me"
+Uppgift: Lägg till en "Kom ihåg mig"-checkbox, och spara användarnamnet endast användarnamnet i localStorage om det är ikryssat. Vid nästa sidladdning kan fältet automatiskt fyllas i.
+
+
+2. Skapa en “Fake” Loginprocess med Loading State
+När man har en web app och ska logga in på riktigt, så krävs att man interagerar med en slags server.
+Ibland kan det ta lite tid (några sekunder). För att förtydliga för användaren vad som händer under väntetiden
+kan man visa någon form av laddningsindikator eller dylikt. Vi vill simulera detta genom att hantera
+en "fakad" laddning i state (useState). PS - Kika på setTimeout, och låt det agera som ett fakat api-anrop som
+tar lite tid.
