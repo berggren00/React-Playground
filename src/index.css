@@ -29,3 +29,29 @@ body {
   justify-content: center;
   color:black;
 }
+
+.loginInfo {
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.input {
+  border: 3px solid black;
+  display: flex;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: white;
+  background-color: rgb(204, 58, 58);
+}
